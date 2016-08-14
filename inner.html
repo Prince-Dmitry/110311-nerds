@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <nav class="main-navigation">
+          <a href="#"><img src="img/index-logo-top.png" width="200" height="100" alt="Nerd's"></a>
+          <ul>
+            <li>
+              <a href="#">СТУДИЯ</a>
+            </li>
+            <li>
+              <a href="#">КЛИЕНТЫ</a>
+            </li>
+            <li>
+              <a href="#">МАГАЗИН</a>
+            </li>
+            <li>
+              <a href="#">КОНТАКТЫ</a>
+            </li>
+          </ul>
+          <section class="basket-picture">
+            <img src="img/basket.jpg" width="30" height="30">
+            <a href="#">КОРЗИНА</a>
+          </section>
+          <p class="hat"><b>ДОБРО ПОЖАЛОВАТЬ В МАГАЗИН ГОТОВЫХ МАКЕТОВ</b></p>
+      </div>
+    </header>
+    <main>
+      <form action="https://barbershop.ru" method="get">
+        <fieldset class="scale">
+          <h2>
+          СТОИМОСТЬ:
+          </h2>
+          <div>
+            <label for="min">ОТ</label>
+            <input type="number" name="min-price" id="min">
+            <label for="max">ДО</label>
+            <input type="number" name="max-price" id="max">
+          </div>
+        </fieldset>
+
+        <fieldset class="web's-kind">
+          <h2>
+          СЕТКА:
+          </h2>
+          <label>   
+            <input type="radio" name="web's-type" value="1" checked>  
+            Адаптивная
+          </label>
+          <br>
+          <label>
+            <input type="radio" name="web's-type" value="2">
+            Фиксированная            
+          </label>
+          <br>
+          <label>  
+            <input type="radio" name="web's-type" value="3"> 
+            Резиновая            
+          </label>
+      </fieldset>
+      <fieldset class="differences">
+        <h2>
+        ОСОБЕННОСТИ:
+        </h2>
+          <input type="checkbox" name="slider" id="kind-of-items-1"checked>
+          <label for="kind-of-items 1">Слайдер</label>
+
+          <input type="checkbox" name="advantage's-block" id="kind-of-items-2">
+          <label for="kind-of-items-2">Блок преимуществ</label>
+
+          <input type="checkbox" name="news" id="kind-of-items-3" checked>
+          <label for="kind-of-items-3">Новости</label>
+
+          <input type="checkbox" name="galery" id="kind-of-items-4">
+          <label for="kind-of-items 4">Галерея</label>
+
+          <input type="checkbox" name="backet" id="kind-of-items-5">
+          <label for="kind-of-items 5">Корзина</label>
+        </fieldset>
+        <div>
+          <a class="btn-show" href="#">ПОКАЗАТЬ</a>
+        </div>
+      </form>
+      <div>
+        <nav class="sorting">
+	  <p>СОРТИРОВАТЬ:</p>
+          <ul>
+            <li>
+              <a href="#"><ins>ПО ЦЕНЕ</ins></a>
+            </li>
+            <li>
+              <a href="#"><ins>ПО ТИПУ</ins></a>
+            </li>
+            <li>
+              <a href="#"><ins>ПО ФУНКЦИОНАЛУ</ins></a>
+            </li>
+          </ul>
+          <a class="go-top" href="#">
+            <img src="img/go-bottom.jpg" width="20" height="20"></a>
+          <a class="go-top" href="#">
+            <img src="img/go-top.jpg" width="20" height="20"></a>
+        </nav>
+      </div>
+      <section class="photo">
+        <figure class="picture">
+          <a class="link" href="#">
+            <img src="img/AVIATOR.jpg" width="200" height="200"></a>
+          <a class="link" href="#">
+            <img src="img/SUNSET.jpg" width="200" height="200"></a>
+          <a class="link" href="#">
+            <img src="img/FORTE.jpg" width="200" height="200"></a>
+          <a class="link" href="#">
+            <img src="img/MODERN-ORGANIC-THAI.jpg" width="200" height="200"></a>
+          <a class="link" href="#">
+            <img src="img/AVENUE.jpg" width="200" height="200"></a>
+          <a class="link" href="#">
+            <img src="img/DOVETAIL.jpg" width="200" height="200"></a>
+        </figure>
+      </section>
+      <div>
+       <nav class="page-number">
+         <ul>
+           <li>
+             <a href="#">1</a>
+           </li>
+           <li>
+             <a href="#">2</a>
+           </li>
+           <li>
+             <a href="#">3</a>
+           </li>
+           <li>
+             <a href="#">СЛЕДУЮЩАЯ</a>
+           </li>
+         </ul>
+       </nav>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <section class="footer-contacts">
+          <img src="img/map.png" width="800" height="400">
+          <h2>
+          NЁRDS DESIGN STUDIO
+          </h2>
+            <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+            тел. +7 (812)275-75-75</p>
+            <a href="#">НАПИШИТЕ НАМ</a><br>   
+        </section>
+        <section class="footer-social">
+          <a class="social-btn social-btn-vk" href="#">
+             <img src="img/vk.jpg" width="30" height="30"></a>
+           <a class="social-btn social-btn-fb" href="#">
+             <img src="img/fb.jpg" width="30" height="30"></a>
+           <a class="social-btn social-btn-inst" href="#">
+             <img src="img/inst.jpg" width="30" height="30"></a>
+          <p><b>
+          Давайте дружить, это выгодно!
+          </b></p>
+        </section>
+  </body>
+</html>

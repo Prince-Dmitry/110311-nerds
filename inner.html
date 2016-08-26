@@ -1,14 +1,13 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
-    <header class="main-header">
+    <header class="main-header-inner">
       <div class="container">
         <nav class="main-navigation">
-          <img src="img/header-fon-catalog.png" width="1200" height="328">
           <a href="#"><img src="img/index-logo-top.png" width="139" height="56" alt="Nerds"></a>
           <ul>
             <li>
@@ -28,10 +27,13 @@
             <img src="img/basket.jpg" width="15" height="15">
             <a href="#">КОРЗИНА</a>
           </section>
-          <p class="hat"><b>ДОБРО ПОЖАЛОВАТЬ В МАГАЗИН ГОТОВЫХ МАКЕТОВ</b></p>
+	  <section class="welcome-message">
+            <p class="hat"><b>ДОБРО ПОЖАЛОВАТЬ В МАГАЗИН<br>
+            ГОТОВЫХ МАКЕТОВ</b></p>
+          </section>
       </div>
     </header>
-    <main>
+    <main class="main-container clearfix">
       <form action="https://nerds.ru" method="get">
         <fieldset class="scale">
           <h2>
@@ -74,7 +76,7 @@
           <input type="checkbox" name="slider" id="kind-of-items-1"checked>
           <label for="kind-of-items 1">Слайдер</label>
 
-          <input type="checkbox" name="advantage's-block" id="kind-of-items-2">
+          <input type="checkbox" name="advantage-block" id="kind-of-items-2">
           <label for="kind-of-items-2">Блок преимуществ</label>
 
           <input type="checkbox" name="news" id="kind-of-items-3" checked>
@@ -104,10 +106,12 @@
               <a href="#"><ins>ПО ФУНКЦИОНАЛУ</ins></a>
             </li>
           </ul>
-          <a class="go-top" href="#">
-            <img src="img/go-bottom.jpg" width="20" height="20"></a>
-          <a class="go-top" href="#">
-            <img src="img/go-top.jpg" width="20" height="20"></a>
+          <div class="buttons-botton-top">
+            <a class="go-bottom" href="#">
+              <img src="img/go-bottom.jpg" width="20" height="20"></a>
+            <a class="go-top" href="#">
+              <img src="img/go-top.jpg" width="20" height="20"></a>
+          </div>
         </nav>
       </div>
       <section class="macket-description">
@@ -201,36 +205,43 @@
        </nav>
       </div>
     </main>
-     <footer>
+     <footer class="footer-container clearfix">
       <div class="container">
-        <section class="footer-contacts">
-          <img src="img/map.png" width="1200" height="416">
-          <img src="img/marker.png" width="231" height="190">
-          <img src="img/marker-logo.png" width="92" height="37">
-          <h2>
-          NЁRDS DESIGN STUDIO
-          </h2>
-            <img src="img/contacts-fon.png" width="250" height="240">
-            <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-            тел. +7 (812)275-75-75</p>
-            <a class="button-label" href="#">НАПИШИТЕ НАМ</a><br>   
+        <section class="footer-contacts clearfix">
+	  <div class="map">
+            <img src="img/map.png" width="1200" height="416">
+          </div>
+	  <div class="market">
+	    <img src="img/marker.png" width="231" height="190">
+	  </div>
+	  <div class="market-logo">            
+            <img src="img/marker-logo.png" width="92" height="37">
+  	  </div>
+          <div class="contacts">
+            <h2>
+            NЁRDS DESIGN STUDIO
+            </h2>
+              <img src="img/contacts-fon.png" width="250" height="240">
+              <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+              <p>тел. +7 (812)275-75-75</p>
+              <a class="button-label" href="#">НАПИШИТЕ НАМ</a><br>
+          </div>   
         </section>
-        <section class="footer-social">
-          <a class="social-btn fon-1" href="#">
-            <img src="img/.contacts-fon-1" width="62" height="62"></a>
-          <a class="social-btn fon-2" href="#">
-            <img src="img/.contacts-fon-2" width="62" height="62"></a>
-          <a class="social-btn fon-3" href="#">
-            <img src="img/.contacts-fon-3" width="62" height="62"></a>
-          <a class="social-btn social-btn-vk" href="#">
-            <img src="img/.icon-vk.png" width="26" height="15"></a>
-          <a class="social-btn social-btn-fb" href="#">
-            <img src="img/icon-fb.png" width="12" height="22"></a>
-          <a class="social-btn social-btn-inst" href="#">
-            <img src="img/icon-inst.png" width="21" height="21"></a>
-          <p><b>
-          Давайте дружить, это выгодно!
-          </b></p>
+        <section class="footer-social clearfix">
+          <section class="links">
+            <a class="social-btn social-btn-vk" href="#">
+              <img src="img/.icon-vk.png" width="26" height="15"></a>
+            <a class="social-btn social-btn-fb" href="#">
+              <img src="img/icon-fb.png" width="12" height="22"></a>
+            <a class="social-btn social-btn-inst" href="#">
+              <img src="img/icon-inst.png" width="21" height="21"></a>
+          </section>
+          <section class="friendship-and-profit">
+            <p><b>
+            Давайте дружить, это выгодно!<br>
+            </b></p>
+            <p>Скидка 10% для друзей из социальных сетей.</p>
+          </section>
         </section>
       </div>
     </footer>

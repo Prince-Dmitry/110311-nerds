@@ -1,16 +1,340 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
+
+  body {
+  min-width: 2250px;
+  min-height: 1200px;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  }
+
+  .main-header{
+  min-height: 436px;
+  margin-bottom: 80px;
+  background-color: #eeeeee;
+  }
+
+  .container{
+  width: 900px;
+  margin: 0 auto;
+  padding: 0 10px;
+  }
+
+  .index-logo{
+  float:left;
+  margin-top:25px;
+  margin-bottom: 70px;
+  width:139px;
+  height: 56px;
+  }
+
+  .navigation{
+  float: left;
+  margin-left:180px;
+  width:400px;
+  }
+  
+  .basket{
+  float:right;
+  width:110px; 
+  }
+
+  .clearfix::after{
+  content: "";
+  display: table;
+  clear: both;
+  }
+
+  .main-top-container{
+  margin: 80px auto;
+  min-height: 460px;
+  }
+
+  .website{
+  float: left;
+  width: 240px;
+  height: 300px;
+  margin-right: 80px;
+  }
+
+  .website img, .website h2, .website p{
+  margin-right: 0px;
+  margin-bottom: 27px;
+  }
+
+  .website .button-label{
+  margin-top: 32px;
+  margin-right: 0px;
+  background-color: #fb565a;
+  color: #ffffff;
+  }
+
+  .attachment{
+  float: left;
+  width: 240px;
+  height: 300px;
+  margin-right: 80px;
+  }
+
+  .attachment img, .attachment h2, .attachment p{
+  margin-right: 0px;
+  margin-bottom: 27px;
+  }
+
+  .attachment .button-label{
+  margin-top: 32px;
+  margin-right: 0px;
+  background-color: #00ca74;
+  color: #ffffff;
+  }
+
+  .presentation{
+  float: left;
+  width: 240px;
+  height: 300px;
+  margin-right: 0px;
+  }
+
+  .presentation img, .presentation h2, .presentation p{
+  margin-right: 0px;
+  margin-bottom: 27px;
+  }
+
+  .presentation .button-label{
+  margin-top: 32px;
+  margin-right: 0px;
+  background-color: #efc84a;
+  color: #ffffff;
+  }
+
+  .main-middle-container{
+  margin: auto auto;
+  min-height: 515px;
+  }
+  
+  .sitebare-left{
+  float:left;
+  width: 575px;
+  min-height: 515px;
+  margin: auto 0;
+  padding: 75px 0;
+  }
+
+  .sitebare-right{
+  float: right;
+  width: 250px;
+  min-height: 515px;
+  margin: auto 0;
+  padding: 75px 10px;
+  }
+  
+  .sitebare-right p b{
+  margin: 0 auto;
+  padding-botttom: 75px;
+  }
+
+
+  .main-bottom-container{
+  min-height: 300px;
+  }
+
+  .main-bottom-container a:nth-child(1){
+  float:left;
+  width: 198px;
+  margin-left: auto 40px;
+  }
+
+  .main-bottom-container a:nth-child(2){
+  float:left;
+  width: 199px;
+  margin-left: auto 90px;
+  }
+
+  .main-bottom-container a:nth-child(3){
+  float:right;
+  width: 209px;
+  margin-right: auto 19px;
+  }
+
+
+  footer{
+  min-height:632px;
+  width:1200px;
+  margin-top: 120px;
+  }
+
+  .footer-contacts{
+  min-height:416px;
+  margin: 0 auto;
+  float:top;
+  min-width: 1200px;
+  }
+  
+  .contacts{
+  float: left;
+  min-width: 250px;
+  margin-top: 88px;
+  margin-left: 160px;
+  background-color: #ffffff;
+  } 
+  
+  .contacts h2, .contacts p{
+  margin-left: 20px;
+  margin-bottom: 25px;
+  }
+
+  .contacts h2{
+  margin-top: 30px;
+  }
+
+  .button-label{
+  width:204px;
+  height:38px;
+  margin-top: 30px;
+  padding: 0 auto;
+  background-color: #fb565a;
+  color: #ffffff;
+  }
+
+  .market{
+  float: right;
+  width: 231px;
+  height: 190px;
+  margin-right:130px;
+  margin-top: 122px;
+  }
+
+ .market-logo{
+  float: right;
+  width: 92px;
+  height: 37px;
+  margin-right: 235px;
+  margin-top: 167px;
+  }
+
+  .footer-social{
+  min-height: 216px;
+  min-height: 240px;
+  margin: 0 auto;
+  float:top;
+  min-width: 1200px;
+  }
+  
+  .footer-links{
+  float:left;
+  margin-left: 160px;
+  margin-top: 76px;
+  min-width: 250px;
+  padding: auto 0px;
+  }
+
+  .social-btn{
+  margin-right: 28px;
+  }
+
+  .social-btn:last-child{
+  margin-right: 0;
+  }
+
+  .friendship-and-profit{
+  float: right; 
+  min-width: 570px;
+  margin-right:160px;
+  padding: auto 10px;
+  }
+
+
+
+  .main-header-inner{
+  min-height: 328px;
+  margin-bottom: 80px;
+  background-color: #eeeeee;
+  }
+  
+  .welcome-message{
+  float:top;
+  margin:73px auto;
+  width: 654px;
+  min-height: 75px;
+  }
+
+  main-container{
+  background-color: #ffffff;
+  margin: 80px 150px;
+  padding: 0 10px;
+  width: 920px;
+  }
+
+  form {
+  float:left;
+  width:240px;
+  min-height: 750px;
+  margin:auto 0;
+  }
+
+  .web-kind, .differences, .btn-show{
+  margin-top: 40px;
+  }
+
+  .sorting{
+  float:right;
+  margin:0 auto;
+  width: 580px;
+  min-height:15px;
+  }
+  
+  .sorting p, .sorting ul li{
+  margin-right: 45px; 
+  }
+  
+  .buttons-botton-top{
+  float: right;
+  width:40px;
+  margin:auto o; 
+  }
+
+  .macket-description{
+  float:right;
+  width:560px;
+  min-height: 1000px;
+  }
+
+  .page-number{
+  float:bottom;
+  width:320px;
+  min-height: 40px;
+  margin: 80px auto;
+  }
+   
+  .page-number ul li{
+  width: 340x;
+  height: 40px;
+  background-color: #283136;
+  color: #000000;
+  margin-right: 10px; 
+  }
+
+  .page-number ul li:last-child{
+  width: 140x;
+  height: 40px;
+  background-color: #283136;
+  color: #000000;
+  margin-right: 0px; 
+  }
+
+
   p b{
   font-size: 36px;
   line-height: 36px;
   color: #000000;
   font-family: Roboto;
-  font-weight: bold;
+  font-weight: normal;
   }
    
   p{
@@ -38,4 +362,3 @@
   }
   </body>
 </html>
-

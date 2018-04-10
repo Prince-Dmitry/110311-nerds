@@ -1,7 +1,9 @@
-<!DOCTYPE html>
+﻿ <!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500,300"      rel="stylesheet" type="text/css">
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
@@ -10,165 +12,163 @@
         <nav class="main-navigation">
           <a class="index-logo" href="#"><img src="img/index-logo-top.png" width="139" height="56" alt="Nerds"></a>
           <ul class="navigation">
-            <li>
-              <a href="#">СТУДИЯ</a>
-            </li>
-            <li>
-              <a href="#">КЛИЕНТЫ</a>
-            </li>
-            <li>
-              <a href="#">МАГАЗИН</a>
-            </li>
-            <li>
-              <a href="#">КОНТАКТЫ</a>
-            </li>
+            <li><a href="#">СТУДИЯ</a></li>
+            <li><a href="#">КЛИЕНТЫ</a></li>
+            <li><a href="inner.html">МАГАЗИН</a></li>
+            <li><a href="#">КОНТАКТЫ</a></li>
           </ul>
           <section class="basket">
-            <img src="img/basket.png" width="15" height="15">
-            <a href="#">КОРЗИНА</a>
+            <a href="#">
+            <img src="img/basket.png" width="15" height="15">КОРЗИНА</a>
           </section>
         </nav>
-      <section class="about-company">
-	<section class="slider-1">
-          <h1>
-	  Долго, дорого, скрупузено.
-          </h1>
-          <p>Математически выверенный дизайн<br>
-          для вашего сайта или мобильного приложения</p>
-          <a class="button-label" href="#" >УЗНАТЬ БОЛЬШЕ</a>
-          <a href="#"><img src="img/slider-1.png" 
-          width="338" height="231" alt="slider-1"></a> 
-        </section>
-        <section class="slider-2">
-          <h1>
-	  Любите ли вы математику,<br>
-          как любим ее мы?
-          </h1>
-          <p>Нашим дизайнерам мы удаляем нейроны, ответственные<br>
-          за креатив, чтобы дать им возможность все просчитать</p>
-          <a class="button-label" href="#">УЗНАТЬ БОЛЬШЕ</a>
-          <a href="#"><img src="img/slider-2.png" 
-          width="230" height="249" alt="slider-2"></a>  
-        </section>
-        <section class="slider-3">
-          <h1>
-	  Только наркотики,<br>
-          только хардкор!
-          </h1>
-          <p>Все дизайнерские решения в нашей компании принимаются<br>
-          только под воздействием качественных галлюциногенов</p>
-          <a class="button-label" href="#" >УЗНАТЬ БОЛЬШЕ</a>
-          <a href="#"><img src="img/slider-3.png" 
-          width="333" height="319" alt="slider-3"></a>  
-        </section>
-      </section>
+      </div>
+
+      <div class="slider">
+        <input type="radio" id="btn-1" name="toggle" checked>
+        <input type="radio" id="btn-2" name="toggle">
+        <input type="radio" id="btn-3" name="toggle">
+        <div class="slider-controls">
+          <label for="btn-1"></label>
+          <label for="btn-2"></label>
+          <label for="btn-3"></label>
+        </div>
+        <div class="slides">
+          <div class="slide">
+            <div class="slide-text">
+              <div class="slide-title">Долго, дорого,<br>скрупулезно</div>
+              <p>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
+              <a class="btn" href="#">Узнать больше</a>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-text">
+              <div class="slide-title">Любите ли вы математику,<br> как любим ее мы?</div>
+              <p>Нашим дизайнерам мы удаляем нейроны, ответственные<br>за креатив, чтобы дать им возможность все просчитать.</p>
+              <a class="btn" href="#">Узнать больше</a>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-text">
+              <div class="slide-title">Только наркотики,<br> только хардкор!</div>
+              <p>Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов.</p>
+              <a class="btn" href="#">Узнать больше</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
-    <main>
-      <section class="main-top-container clearfix">
+    <main>    
+      <section class="catalog container clearfix">
         <section class="website">
           <img src="img/website.png" width="240" height="124">
-          <h2>
-          ВЕБ-САЙТЫ
-          </h2>
-            <p>Мир никогда не будет прежним после того как увидит вас сайт!</p>
-            <button class="btn button-label" type="submit" width="140" height="38">ЗАКАЗАТЬ</button>
+          <h2>ВЕБ-САЙТЫ</h2>
+          <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+          <button class="btn but-label" type="submit" width="140" height="38">ЗАКАЗАТЬ</button>
         </section>
         <section class="attachment">
           <img src="img/attachment.png" width="240" height="124">
-          <h2>
-          ПРИЛОЖЕНИЯ
-          </h2>
+          <h2>ПРИЛОЖЕНИЯ</h2>
           <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-          <button class="btn button-label" type="submit" width="140" height="38">ЗАКАЗАТЬ</button>
+          <button class="btn but-label" type="submit" width="140" height="38">ЗАКАЗАТЬ</button>
+        </section>
+        <section class="presentation">
+          <img src="img/presentation.png" width="240" height="124">
+          <h2>ПРЕЗЕНТАЦИИ</h2>
+          <p>Вы даже не подозреваете? насколько вы изумительны!</p>
+          <button class="btn but-label" type="submit" width="140" height="38">ЗАКАЗАТЬ</button>
+        </section>
       </section>
-      <section class="presentation">
-        <img src="img/presentation.png" width="240" height="124">
-        <h2>
-        ПРЕЗЕНТАЦИИ
-        </h2>
-        <p>Вы даже не подозреваете? насколько вы изумительны!</p>
-        <button class="btn button-label" type="submit" width="140" height="38">ЗАКАЗАТЬ</button>
+
+      <section class="main-top container clearfix">
+        <article class="sitebare-left">
+          <p><b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b></p>
+          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
+        </article>
+        <article class="sitebare-right">
+          <img src="img/index-logo-bottom.png" width="187" height="75">
+          <p><b>SINCE 2004</b></p>
+        </article>
       </section>
-    </section>
-    <section class="main-middle-container clearfix">
-      <section class="sitebare-left">
-        <p><b>
-        Мы - маленькая, но гордая дизайн-студия из Краснодара.
-        </b></p>
-        <p>Исповедуем принципы минимализма и чистоты. Ставим математический 
-        расчет выше креатива. Работаем не покладая рук, как роботы.</p>
-        <h2>
-        ВЫПОЛНИМ ЗАКАЗЫ НА РАЗРАБОТКУ:
-        </h2>
+
+      <section class="main-bottom container clearfix">
+        <article class="sitebare-left-bottom">
+          <h2>ВЫПОЛНИМ ЗАКАЗЫ НА РАЗРАБОТКУ:</h2>
           <ul>
-            <li>
-            Веб-сайты любой сложности 
-            </li>
-            <li>
-            Мобильных приложений для IOS и Android   
-            </li>
-            <li>
-            Слайдшоу и видео для корпоративных презентаций    
-            </li>
+            <li>Веб-сайты любой сложности </li>
+            <li>Мобильных приложений для IOS и Android</li>
+            <li>Слайдшоу и видео для корпоративных презентаций</li>
           </ul>
-      </section>
-      <section class="sitebare-right">
-        <img src="img/index-logo-bottom.png" width="187" height="75">
-        <p><b>SINCE 2004</b></p>
-        <h2>КАК МЫ РАБОТАЕМ</h2>
+        </article>
+        <article class="sitebare-right-bottom">
+          <h2>КАК МЫ РАБОТАЕМ</h2>
           <ul>
             <li>С самоотдачей 146%</li>
             <li>Соблюдая сроки на 100%</li>
             <li>По предоплате 50%</li>
           </ul>
-      </section>
+      </article>
     </section>
-    <section class="main-bottom-container clearfix container">
-      <a href="#"><img src="img/GLUKHANKO.png" width="198" height="37"></a>
-      <a href="#"><img src="img/HTML-ACADEMY.png" width="199" height="68"></a>
-      <a href="#"><img src="img/BORODINSKI.png" width="209" height="86"></a>
+    <section class="bottom-container clearfix container">
+      <a class="CLUKHANKO" href="#"><img src="img/CLUKHANKO-hover.png" width="198" height="37"></a>
+      <a class="HTML-ACADEMY" href="#"><img src="img/HTML-ACADEMY-hover.png" width="199" height="68"></a>
+      <a class="BORODINSKI" href="#"><img src="img/BORODINSKI-hover.png" width="209" height="86"></a>
     </section>
     </main>
-    <footer class="footer-container clearfix">
-      <div class="container">
-        <section class="footer-contacts clearfix">
-	  <div class="map">
-            <img src="img/map.png" width="1200" height="416">
-          </div>
-	  <div class="market">
-	    <img src="img/marker.png" width="231" height="190">
-	  </div>
-	  <div class="market-logo">            
-            <img src="img/marker-logo.png" width="92" height="37">
-  	  </div>
+
+    <footer class="clearfix">
+      <div class="footer-map">
+	      <div class="map footer-contacts clearfix">
+          <img src="img/map.png" width="1200" height="416">
+          <div class="market">
+	          <img src="img/marker.png" width="231" height="190">
+	        </div>
           <div class="contacts">
-            <h2>
-            NЁRDS DESIGN STUDIO
-            </h2>
-              <img src="img/contacts-fon.png" width="250" height="240">
+            <h2>NЁRDS DESIGN STUDIO</h2>
               <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
               <p>тел. +7 (812)275-75-75</p>
-              <a class="button-label" href="#">НАПИШИТЕ НАМ</a><br>
-          </div>   
-        </section>
-        <section class="footer-social clearfix">
-          <section class="links">
+              <a class="write-us login" href="#login">НАПИШИТЕ НАМ</a><br>
+            </div>   
+          </div>
+        <section class="footer-social container clearfix">
+          <section class="footer-links">
             <a class="social-btn social-btn-vk" href="#">
-              <img src="img/.icon-vk.png" width="26" height="15"></a>
+              <img class="vk simbols" src="img/icon-vk.png" width="26px" height="15px"></a>
             <a class="social-btn social-btn-fb" href="#">
-              <img src="img/icon-fb.png" width="12" height="22"></a>
-            <a class="social-btn social-btn-inst" href="#">
-              <img src="img/icon-inst.png" width="21" height="21"></a>
+              <img class="simbols fb" src="img/icon-fb.png" width="12px" height="22px"></a>
+            <a class="social-btn social-btn-inst" href="https://www.instagram.com/">
+              <img class="inst simbols" src="img/icon-inst.png" width="21px" height="21px"></a>
           </section>
           <section class="friendship-and-profit">
-            <p><b>
-            Давайте дружить, это выгодно!<br>
-            </b></p>
+            <p><b>Давайте дружить, это выгодно!<br></b></p>
             <p>Скидка 10% для друзей из социальных сетей.</p>
           </section>
         </section>
       </div>
     </footer>
+
+    <div class="modal-content">
+      <div class="overlay"></div>
+      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+      <form class="login-form" action="https://" method="post">
+        <div class="name"> 
+          <label><h2>Ваше имя:</h2>
+            <input type="text" name="login" placeholder="ПРЕДСТАВЬТЕСЬ, ПОЖАЛУЙСТА">
+          </label>
+        </div>
+        <div class="mail"> 
+          <label><h2>Ваш e-mail:</h2>
+            <input type="text" name="email" placeholder="ДЛЯ ОТПРАВКИ ОТВЕТА">
+          </label><br>
+        </div>
+        <div class="letter-txt"> 
+          <label><h2>Текст письма:</h2>
+	          <input type="text" name="letter-text" placeholder="В СВОБОДНОЙ ФОРМЕ">
+          </label><br>
+        </div>
+        <input class="exit" type="submit">
+      </form>
+    </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
-
